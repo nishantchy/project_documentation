@@ -8,6 +8,8 @@ import ImageWithCaption from "../../../components/ImageWithCaption";
 import SummaryTable from "../../../components/SummaryTable";
 import Contributing from "../../../components/Contributing";
 import License from "../../../components/License";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function DocumentationPage() {
   return (
@@ -17,7 +19,11 @@ export default function DocumentationPage() {
         subtitle="A modern web application built with Next.js, showcasing advanced DevOps practices including CI/CD, secure environment management, and cloud deployment."
         image="/projects/baburam-project-setup/cover.png"
       />
-
+      <Button>
+        <Link href="https://baburam-foundation.vercel.app/">
+          Link Project Link
+        </Link>
+      </Button>
       <TableOfContents />
 
       <Section id="project-overview" title="Project Overview">
