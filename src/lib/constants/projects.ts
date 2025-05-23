@@ -6,17 +6,19 @@ export interface Project {
   githubLink: string;
   image: string;
   technologies: string[];
+  deployedUrl: string;
 }
 
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Kubernetes Cluster Setup",
-    slug: "kubernetes-cluster-setup",
+    title: "Baburam Foundation Information System",
+    slug: "baburam-project-setup",
     description:
       "A comprehensive guide for setting up and managing a production-grade Kubernetes cluster with best practices.",
     githubLink: "https://github.com/yourusername/kubernetes-cluster-setup",
-    image: "/projects/kubernetes-cluster/cover.png",
-    technologies: ["Kubernetes", "Docker", "Terraform", "AWS"],
+    image: "/projects/baburam-project-setup/cover.png",
+    technologies: ["GitHub Actions", "Vercel"],
+    deployedUrl: "https://baburam-foundation.vercel.app/",
   },
 ];

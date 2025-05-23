@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Observability Architecture</text>
+  
+  <!-- Next.js Application Box -->
+  <rect x="300" y="100" width="200" height="80" rx="5" ry="5" fill="#0070f3" />
+  <text x="400" y="145" font-family="Arial" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Next.js Application</text>
+  
+  <!-- Vercel Analytics Box -->
+  <rect x="50" y="240" width="180" height="70" rx="5" ry="5" fill="#000000" />
+  <text x="140" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Vercel Analytics</text>
+  <text x="140" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Built-in Monitoring</text>
+  
+  <!-- Sentry Box -->
+  <rect x="250" y="240" width="180" height="70" rx="5" ry="5" fill="#362d59" />
+  <text x="340" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Sentry</text>
+  <text x="340" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Error Tracking</text>
+  
+  <!-- Custom Metrics API Box -->
+  <rect x="450" y="240" width="180" height="70" rx="5" ry="5" fill="#ff6b6b" />
+  <text x="540" y="275" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Custom API</text>
+  <text x="540" y="295" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Metrics Collection</text>
+  
+  <!-- External Monitoring Box -->
+  <rect x="570" y="100" width="180" height="80" rx="5" ry="5" fill="#4caf50" />
+  <text x="660" y="130" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">External</text>
+  <text x="660" y="150" font-family="Arial" font-size="16" text-anchor="middle" fill="white" font-weight="bold">Monitoring</text>
+  <text x="660" y="170" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Prometheus/Grafana</text>
+  
+  <!-- Dashboard Box -->
+  <rect x="300" y="370" width="200" height="80" rx="5" ry="5" fill="#ff9800" />
+  <text x="400" y="410" font-family="Arial" font-size="18" text-anchor="middle" fill="white" font-weight="bold">Dashboards</text>
+  <text x="400" y="430" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Unified Monitoring</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  
+  <!-- Next.js to Monitoring Services -->
+  <line x1="340" y1="180" x2="140" y2="240" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="400" y1="180" x2="340" y2="240" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="460" y1="180" x2="540" y2="240" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Custom API to External Monitoring -->
+  <line x1="570" y1="240" x2="660" y2="180" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Monitoring Services to Dashboard -->
+  <line x1="140" y1="310" x2="340" y2="370" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="340" y1="310" x2="370" y2="370" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="540" y1="310" x2="430" y2="370" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="660" y1="180" x2="460" y2="370" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Labels for Arrows -->
+  <text x="240" y="210" font-family="Arial" font-size="12" transform="rotate(-30, 240, 210)">Performance Data</text>
+  <text x="370" y="210" font-family="Arial" font-size="12">Error Events</text>
+  <text x="500" y="210" font-family="Arial" font-size="12" transform="rotate(30, 500, 210)">Custom Metrics</text>
+  <text x="620" y="220" font-family="Arial" font-size="12" transform="rotate(-30, 620, 220)">Push Metrics</text>
+  
+  <!-- Data Types -->
+  <rect x="50" y="330" width="180" height="20" rx="10" ry="10" fill="#e3f2fd" />
+  <text x="140" y="345" font-family="Arial" font-size="12" text-anchor="middle">Web Vitals, Page Views</text>
+  
+  <rect x="250" y="330" width="180" height="20" rx="10" ry="10" fill="#e8eaf6" />
+  <text x="340" y="345" font-family="Arial" font-size="12" text-anchor="middle">Exceptions, Crashes</text>
+  
+  <rect x="450" y="330" width="180" height="20" rx="10" ry="10" fill="#fff3e0" />
+  <text x="540" y="345" font-family="Arial" font-size="12" text-anchor="middle">Business Metrics, API Stats</text>
+</svg>

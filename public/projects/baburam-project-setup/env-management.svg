@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <!-- Background -->
+  <rect width="700" height="400" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="350" y="40" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">Environment Variable Management</text>
+  
+  <!-- Development Environment -->
+  <rect x="50" y="100" width="180" height="220" rx="5" ry="5" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" />
+  <text x="140" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Development</text>
+  <text x="140" y="150" font-family="Arial" font-size="12" text-anchor="middle">.env.local</text>
+  
+  <rect x="70" y="170" width="140" height="30" rx="3" ry="3" fill="#a5d6a7" />
+  <text x="140" y="190" font-family="Arial" font-size="12" text-anchor="middle">API_KEY=dev_key</text>
+  
+  <rect x="70" y="210" width="140" height="30" rx="3" ry="3" fill="#a5d6a7" />
+  <text x="140" y="230" font-family="Arial" font-size="12" text-anchor="middle">DB_URL=localhost</text>
+  
+  <rect x="70" y="250" width="140" height="30" rx="3" ry="3" fill="#a5d6a7" />
+  <text x="140" y="270" font-family="Arial" font-size="12" text-anchor="middle">DEBUG=true</text>
+  
+  <!-- Staging Environment -->
+  <rect x="260" y="100" width="180" height="220" rx="5" ry="5" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" />
+  <text x="350" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Staging</text>
+  <text x="350" y="150" font-family="Arial" font-size="12" text-anchor="middle">Vercel Preview</text>
+  
+  <rect x="280" y="170" width="140" height="30" rx="3" ry="3" fill="#90caf9" />
+  <text x="350" y="190" font-family="Arial" font-size="12" text-anchor="middle">API_KEY=stage_key</text>
+  
+  <rect x="280" y="210" width="140" height="30" rx="3" ry="3" fill="#90caf9" />
+  <text x="350" y="230" font-family="Arial" font-size="12" text-anchor="middle">DB_URL=staging-db</text>
+  
+  <rect x="280" y="250" width="140" height="30" rx="3" ry="3" fill="#90caf9" />
+  <text x="350" y="270" font-family="Arial" font-size="12" text-anchor="middle">DEBUG=false</text>
+  
+  <!-- Production Environment -->
+  <rect x="470" y="100" width="180" height="220" rx="5" ry="5" fill="#ffebee" stroke="#c62828" stroke-width="2" />
+  <text x="560" y="125" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Production</text>
+  <text x="560" y="150" font-family="Arial" font-size="12" text-anchor="middle">Vercel Production</text>
+  
+  <rect x="490" y="170" width="140" height="30" rx="3" ry="3" fill="#ef9a9a" />
+  <text x="560" y="190" font-family="Arial" font-size="12" text-anchor="middle">API_KEY=prod_key</text>
+  
+  <rect x="490" y="210" width="140" height="30" rx="3" ry="3" fill="#ef9a9a" />
+  <text x="560" y="230" font-family="Arial" font-size="12" text-anchor="middle">DB_URL=prod-db</text>
+  
+  <rect x="490" y="250" width="140" height="30" rx="3" ry="3" fill="#ef9a9a" />
+  <text x="560" y="270" font-family="Arial" font-size="12" text-anchor="middle">DEBUG=false</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  
+  <!-- Development to Staging -->
+  <line x1="230" y1="210" x2="260" y2="210" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Staging to Production -->
+  <line x1="440" y1="210" x2="470" y2="210" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Bottom Labels -->
+  <text x="140" y="350" font-family="Arial" font-size="14" text-anchor="middle">Local Development</text>
+  <text x="350" y="350" font-family="Arial" font-size="14" text-anchor="middle">Pull Request Deploys</text>
+  <text x="560" y="350" font-family="Arial" font-size="14" text-anchor="middle">Main Branch Deploys</text>
+  
+  <!-- Security Note -->
+  <rect x="150" y="370" width="400" height="20" rx="5" ry="5" fill="none" stroke="#555" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="350" y="385" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">All environment variables are encrypted and securely stored</text>
+</svg> 

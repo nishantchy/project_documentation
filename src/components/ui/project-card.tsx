@@ -11,7 +11,7 @@ import {
 } from "./card";
 import { Button } from "./button";
 import { Badge } from "./badge";
-import { Project } from "@/libs/constants/projects";
+import { Project } from "@/lib/constants/projects";
 
 interface ProjectCardProps {
   project: Project;
