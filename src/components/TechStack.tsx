@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const techs = [
-  { name: "Next.js 14", icon: "/next.svg" },
-  { name: "Tailwind CSS", icon: "/tailwind.svg" },
-  { name: "MongoDB", icon: "/mongodb.svg" },
-  { name: "Cloudinary", icon: "/cloudinary.svg" },
-  { name: "GitHub Actions", icon: "/github-actions.svg" },
-  { name: "Vercel", icon: "/vercel.svg" },
+  { name: "Next.js 14", icon: "/icons/next.png" },
+  { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
+  { name: "MongoDB", icon: "/icons/mongodb.png" },
+  { name: "Cloudinary", icon: "/icons/cloudinary.png" },
+  { name: "GitHub Actions", icon: "/icons/github-actions.png" },
+  { name: "Vercel", icon: "/icons/vercel.png" },
 ];
 
 export default function TechStack() {
