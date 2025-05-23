@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const techs = [
-  { name: "Next.js 14", icon: "/icons/next.png" },
+  { name: "Next.js 14", icon: "/icons/nextjs.png" },
   { name: "Tailwind CSS", icon: "/icons/tailwind.svg" },
   { name: "MongoDB", icon: "/icons/mongodb.png" },
   { name: "Cloudinary", icon: "/icons/cloudinary.png" },

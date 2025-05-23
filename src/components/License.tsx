@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function License() {
   return (
     <section id="license" className="mb-8">
@@ -8,14 +10,14 @@ export default function License() {
           This documentation is part of a larger DevOps portfolio project. For
           more details about the implementation and architecture decisions,
           visit the{" "}
-          <a
-            href="https://chaudharynishant.com.np"
+          <Link
+            href="https://github.com/nishantchy/Internship"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
             Documentation Project
-          </a>
+          </Link>
           .
         </p>
       </div>

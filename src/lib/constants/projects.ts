@@ -15,10 +15,16 @@ export const projects: Project[] = [
     title: "Baburam Foundation Information System",
     slug: "baburam-project-setup",
     description:
-      "A comprehensive guide for setting up and managing a production-grade Kubernetes cluster with best practices.",
-    githubLink: "https://github.com/yourusername/kubernetes-cluster-setup",
+      "A modern Next.js web application with robust DevOps implementation featuring CI/CD pipeline with GitHub Actions, secure environment management, and zero-downtime deployment on Vercel.",
+    githubLink: "https://github.com/nishantchy/Internship",
     image: "/projects/baburam-project-setup/cover.png",
-    technologies: ["GitHub Actions", "Vercel"],
+    technologies: [
+      "GitHub Actions",
+      "Vercel",
+      "Next.js",
+      "MongoDB",
+      "Cloudinary",
+    ],
     deployedUrl: "https://baburam-foundation.vercel.app/",
   },
 ];
